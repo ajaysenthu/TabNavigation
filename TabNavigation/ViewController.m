@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EntertainmentViewController.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,25 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)startTrailers:(UIButton *)sender {
+    
+    EntertainmentViewController *eVC = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewToEntertainment"];
+    
+    [self presentViewController:eVC animated:YES completion:^{
+        
+        
+        NSString *embedCode = @"<iframe src=\"https://www.youtube.com/embed/awlWQyFix_A?ecver=2\" width=\"300\" height=\"200\" frameborder=\"0\" style=\"position:absolute;width:100%;height:100%;left:0\" allowfullscreen></iframe>";
+        
+        [[eVC wv1] loadHTMLString:embedCode baseURL:nil];
+        
+
+        
+    }];
+    
+    
+}
+
 
 
 @end

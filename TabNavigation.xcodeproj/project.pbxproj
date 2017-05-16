@@ -13,6 +13,10 @@
 		21DEF93D1EC9C4D1008E792D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DEF93B1EC9C4D1008E792D /* Main.storyboard */; };
 		21DEF93F1EC9C4D2008E792D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21DEF93E1EC9C4D2008E792D /* Assets.xcassets */; };
 		21DEF9421EC9C4D2008E792D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21DEF9401EC9C4D2008E792D /* LaunchScreen.storyboard */; };
+		21DEF94B1EC9D8A2008E792D /* EntertainmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DEF94A1EC9D8A1008E792D /* EntertainmentViewController.m */; };
+		21DEF94E1EC9D8D8008E792D /* BusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DEF94D1EC9D8D8008E792D /* BusinessViewController.m */; };
+		21DEF9511EC9D8F2008E792D /* SportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DEF9501EC9D8F1008E792D /* SportsViewController.m */; };
+		21DEF9541EC9D906008E792D /* TechnologyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DEF9531EC9D906008E792D /* TechnologyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		21DEF93E1EC9C4D2008E792D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21DEF9411EC9C4D2008E792D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21DEF9431EC9C4D2008E792D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21DEF9491EC9D8A1008E792D /* EntertainmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntertainmentViewController.h; sourceTree = "<group>"; };
+		21DEF94A1EC9D8A1008E792D /* EntertainmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntertainmentViewController.m; sourceTree = "<group>"; };
+		21DEF94C1EC9D8D8008E792D /* BusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessViewController.h; sourceTree = "<group>"; };
+		21DEF94D1EC9D8D8008E792D /* BusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessViewController.m; sourceTree = "<group>"; };
+		21DEF94F1EC9D8F1008E792D /* SportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SportsViewController.h; sourceTree = "<group>"; };
+		21DEF9501EC9D8F1008E792D /* SportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SportsViewController.m; sourceTree = "<group>"; };
+		21DEF9521EC9D906008E792D /* TechnologyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TechnologyViewController.h; sourceTree = "<group>"; };
+		21DEF9531EC9D906008E792D /* TechnologyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TechnologyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,14 @@
 				21DEF9361EC9C4CF008E792D /* AppDelegate.m */,
 				21DEF9381EC9C4D0008E792D /* ViewController.h */,
 				21DEF9391EC9C4D0008E792D /* ViewController.m */,
+				21DEF9491EC9D8A1008E792D /* EntertainmentViewController.h */,
+				21DEF94A1EC9D8A1008E792D /* EntertainmentViewController.m */,
+				21DEF94C1EC9D8D8008E792D /* BusinessViewController.h */,
+				21DEF94D1EC9D8D8008E792D /* BusinessViewController.m */,
+				21DEF94F1EC9D8F1008E792D /* SportsViewController.h */,
+				21DEF9501EC9D8F1008E792D /* SportsViewController.m */,
+				21DEF9521EC9D906008E792D /* TechnologyViewController.h */,
+				21DEF9531EC9D906008E792D /* TechnologyViewController.m */,
 				21DEF93B1EC9C4D1008E792D /* Main.storyboard */,
 				21DEF93E1EC9C4D2008E792D /* Assets.xcassets */,
 				21DEF9401EC9C4D2008E792D /* LaunchScreen.storyboard */,
@@ -152,8 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				21DEF93A1EC9C4D0008E792D /* ViewController.m in Sources */,
+				21DEF94B1EC9D8A2008E792D /* EntertainmentViewController.m in Sources */,
 				21DEF9371EC9C4CF008E792D /* AppDelegate.m in Sources */,
+				21DEF9511EC9D8F2008E792D /* SportsViewController.m in Sources */,
 				21DEF9341EC9C4CF008E792D /* main.m in Sources */,
+				21DEF9541EC9D906008E792D /* TechnologyViewController.m in Sources */,
+				21DEF94E1EC9D8D8008E792D /* BusinessViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

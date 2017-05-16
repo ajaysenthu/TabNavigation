@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8QI-ie-YuZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Entertainment-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,478 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFU-wk-sna">
+                                <rect key="frame" x="14.48538525027675" y="132" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Trailers"/>
+                                <connections>
+                                    <action selector="startTrailers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLA-q6-Qnm"/>
+                                    <segue destination="WJw-HS-qq0" kind="show" id="rBN-0T-9Ua"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wxj-qj-kHM">
+                                <rect key="frame" x="14.48538525027675" y="210" width="343" height="29.999999999999886"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Movies"/>
+                                <connections>
+                                    <segue destination="WJw-HS-qq0" kind="show" id="h5P-hW-OAV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7H-Np-rgU">
+                                <rect key="frame" x="14.48538525027675" y="302" width="343" height="29.999999999999901"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Originals"/>
+                                <connections>
+                                    <segue destination="WJw-HS-qq0" kind="show" id="gDT-NN-jgj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk5-K7-DbD">
+                                <rect key="frame" x="14.48538525027675" y="395" width="343" height="30.000000000000046"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Bloopers"/>
+                                <connections>
+                                    <segue destination="WJw-HS-qq0" kind="show" id="pXh-hA-bd8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mC-u8-JbL">
+                                <rect key="frame" x="14.48538525027675" y="493.99999999999994" width="343" height="30.000000000000043"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gossips"/>
+                                <connections>
+                                    <segue destination="WJw-HS-qq0" kind="show" id="FUk-rG-sE8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Entertainment" id="P8x-tv-Lph"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1959" y="-85"/>
+        </scene>
+        <!--Entertainment View Controller-->
+        <scene sceneID="JFc-uG-LPX">
+            <objects>
+                <viewController storyboardIdentifier="ViewToEntertainment" id="WJw-HS-qq0" customClass="EntertainmentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MEe-Zb-baE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mqc-sV-0V4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lrf-3L-uUX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRj-kT-wnE">
+                                <rect key="frame" x="16" y="277" width="343" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7R-be-hxa">
+                                <rect key="frame" x="16" y="458" width="343" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mqR-F6-qSy">
+                                <rect key="frame" x="16" y="110" width="343" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="wv1" destination="mqR-F6-qSy" id="tB1-cA-mSZ"/>
+                        <outlet property="wv2" destination="gRj-kT-wnE" id="WEr-zU-kxS"/>
+                        <outlet property="wv3" destination="a7R-be-hxa" id="qbI-yb-f6l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zV6-sf-014" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.5999999999999" y="842.42878560719646"/>
+        </scene>
+        <!--Entertainment-->
+        <scene sceneID="rVH-fF-nPp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IqF-d7-q54" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Entertainment" selectedImage="Entertainment" id="qM0-Ep-YRL">
+                        <inset key="imageInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PTg-0y-CgA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="40m-jl-KmC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3EB-Rh-Ziv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1959.2" y="-1075.4122938530736"/>
+        </scene>
+        <!--Business-->
+        <scene sceneID="IoN-KA-Gdx">
+            <objects>
+                <viewController id="yMx-Jb-Xfz" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YEq-QF-cwA"/>
+                        <viewControllerLayoutGuide type="bottom" id="MbI-Vt-pdi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nwM-7e-Xpo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTA-eL-Xew">
+                                <rect key="frame" x="14.812266237732729" y="127" width="343" height="29.999999999999943"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="World"/>
+                                <connections>
+                                    <segue destination="JTp-5K-Ofb" kind="show" id="cN5-8A-YfY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97W-ee-XIl">
+                                <rect key="frame" x="14.812266237732729" y="218" width="343" height="29.999999999999972"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="India"/>
+                                <connections>
+                                    <segue destination="JTp-5K-Ofb" kind="show" id="8no-9F-L40"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nu5-CY-fEI">
+                                <rect key="frame" x="14.812266237732729" y="318" width="343" height="29.999999999999972"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Fortune 500"/>
+                                <connections>
+                                    <segue destination="JTp-5K-Ofb" kind="show" id="a0u-4P-2tG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c64-yo-9J9">
+                                <rect key="frame" x="14.812266237732729" y="424" width="343" height="30.00000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="StartUps"/>
+                                <connections>
+                                    <segue destination="JTp-5K-Ofb" kind="show" id="TTs-jL-onT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOK-Yn-6BA">
+                                <rect key="frame" x="14.812266237732729" y="538" width="343" height="29.999999999999886"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reality Shows"/>
+                                <connections>
+                                    <segue destination="JTp-5K-Ofb" kind="show" id="SOu-3t-y3h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Business" id="HGk-Dm-R6D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dxk-cS-v2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3167" y="-85"/>
+        </scene>
+        <!--Sports-->
+        <scene sceneID="jnv-rt-Tp3">
+            <objects>
+                <viewController id="hkH-Ft-Bp4" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oLy-08-Jq6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nmz-Ud-IRJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8MA-N7-fU2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7V-YP-fWH">
+                                <rect key="frame" x="15.777440184789612" y="105" width="343.00000000000045" height="30.000000000000057"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cricket"/>
+                                <connections>
+                                    <segue destination="UO8-c5-QWR" kind="show" id="wsY-Un-TEj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ke-Gc-hTk">
+                                <rect key="frame" x="15.777440184789612" y="215" width="343.00000000000045" height="29.999999999999972"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="FootBall"/>
+                                <connections>
+                                    <segue destination="UO8-c5-QWR" kind="show" id="C1u-6f-gLd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEy-wC-rKE">
+                                <rect key="frame" x="15.777440184789612" y="341" width="343.00000000000045" height="29.999999999999972"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BasketBall"/>
+                                <connections>
+                                    <segue destination="UO8-c5-QWR" kind="show" id="jyt-06-kT2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vqu-0o-XdH">
+                                <rect key="frame" x="15.777440184789612" y="463" width="343.00000000000045" height="30.00000000000005"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hockey"/>
+                                <connections>
+                                    <segue destination="UO8-c5-QWR" kind="show" id="G39-HS-FI5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sports" id="fXU-J7-bkI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2S8-kO-9C7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4116" y="-85"/>
+        </scene>
+        <!--Technology-->
+        <scene sceneID="g8h-zG-ZiR">
+            <objects>
+                <viewController id="tdH-ay-9aM" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ico-Ep-wTb"/>
+                        <viewControllerLayoutGuide type="bottom" id="vIV-YO-LIH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1f4-MF-F4j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4z-ld-rtA">
+                                <rect key="frame" x="14.252020214315507" y="143" width="343" height="30.000000000000028"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Software"/>
+                                <connections>
+                                    <segue destination="iLS-FY-iyU" kind="show" id="HaA-l5-yvh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76c-Oo-c5q">
+                                <rect key="frame" x="14.252020214315507" y="254" width="343" height="30.000000000000028"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Aeronautics"/>
+                                <connections>
+                                    <segue destination="iLS-FY-iyU" kind="show" id="Soo-bb-MFB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFJ-DR-DCj">
+                                <rect key="frame" x="14.252020214315507" y="378" width="343" height="30.000000000000046"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Space"/>
+                                <connections>
+                                    <segue destination="iLS-FY-iyU" kind="show" id="add-eI-Cxb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BQ-6V-zXN">
+                                <rect key="frame" x="14.252020214315507" y="518" width="343" height="29.999999999999972"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Automobiles"/>
+                                <connections>
+                                    <segue destination="iLS-FY-iyU" kind="show" id="s9z-a9-tra"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Technology" id="KOK-Na-SuO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adQ-47-YmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5135" y="-85"/>
+        </scene>
+        <!--Business View Controller-->
+        <scene sceneID="a3U-KU-qs9">
+            <objects>
+                <viewController id="JTp-5K-Ofb" customClass="BusinessViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C3z-yn-F0E"/>
+                        <viewControllerLayoutGuide type="bottom" id="BPR-h7-p0g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LwF-fu-ReZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLR-4f-2wq">
+                                <rect key="frame" x="16" y="103" width="343" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2RU-Xd-nPB">
+                                <rect key="frame" x="16" y="485" width="343" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfS-EC-ey9">
+                                <rect key="frame" x="16" y="295" width="343" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rda-OD-GpC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3167" y="842"/>
+        </scene>
+        <!--Sports View Controller-->
+        <scene sceneID="rfQ-rb-rsE">
+            <objects>
+                <viewController id="UO8-c5-QWR" customClass="SportsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fOl-yl-1vF"/>
+                        <viewControllerLayoutGuide type="bottom" id="KUg-sC-SsB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WFY-qA-dLI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0jp-2T-Pok">
+                                <rect key="frame" x="16" y="110" width="343" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bsk-Pn-t5x">
+                                <rect key="frame" x="16" y="277" width="343" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zbl-Zo-l9x">
+                                <rect key="frame" x="16" y="464" width="343" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EwL-pi-XVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4116" y="843"/>
+        </scene>
+        <!--Technology View Controller-->
+        <scene sceneID="5SE-Ne-E1N">
+            <objects>
+                <viewController id="iLS-FY-iyU" customClass="TechnologyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L3q-5j-DtT"/>
+                        <viewControllerLayoutGuide type="bottom" id="PuH-5L-ogQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QjW-0T-QXP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pXo-vE-7LY">
+                                <rect key="frame" x="16" y="114" width="343" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DT7-Ii-o5N">
+                                <rect key="frame" x="16" y="303" width="343" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="moe-cm-NLi">
+                                <rect key="frame" x="16" y="466" width="343" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7VJ-hL-fMl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5134" y="844"/>
+        </scene>
+        <!--Business-->
+        <scene sceneID="ugp-KK-wIT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZQ9-rl-sm6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Business" selectedImage="Business" id="8b0-aT-ZhS">
+                        <inset key="imageInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FyE-Gb-8ny">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yMx-Jb-Xfz" kind="relationship" relationship="rootViewController" id="njT-0c-GrF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPC-sy-17C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3167.1999999999998" y="-1075.4122938530736"/>
+        </scene>
+        <!--Sports-->
+        <scene sceneID="cw3-p0-suS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wf7-ST-Ish" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sports" id="GTe-8v-ogJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TGz-H6-ywc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hkH-Ft-Bp4" kind="relationship" relationship="rootViewController" id="tlG-NR-4n7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ib2-AA-xxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4116" y="-1075.4122938530736"/>
+        </scene>
+        <!--Technology-->
+        <scene sceneID="OHk-z3-U7D">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7ji-lU-Y07" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Technology" id="a0d-An-CbY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nNB-bB-ard">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tdH-ay-9aM" kind="relationship" relationship="rootViewController" id="nHS-9i-NbS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L2G-eC-DhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5135.1999999999998" y="-1075.4122938530736"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tUf-T7-NsZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="8QI-ie-YuZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="EMH-Xj-YXg">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IqF-d7-q54" kind="relationship" relationship="viewControllers" id="9PO-mk-sGW"/>
+                        <segue destination="ZQ9-rl-sm6" kind="relationship" relationship="viewControllers" id="kvI-jf-v16"/>
+                        <segue destination="Wf7-ST-Ish" kind="relationship" relationship="viewControllers" id="4N1-tU-f1Y"/>
+                        <segue destination="7ji-lU-Y07" kind="relationship" relationship="viewControllers" id="nvq-Jn-JiU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5s-90-hGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3618" y="-2464"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Business" width="50" height="50"/>
+        <image name="Entertainment" width="50" height="50"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="h5P-hW-OAV"/>
+        <segue reference="cN5-8A-YfY"/>
+        <segue reference="s9z-a9-tra"/>
+        <segue reference="wsY-Un-TEj"/>
+    </inferredMetricsTieBreakers>
 </document>
